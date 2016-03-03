@@ -1,6 +1,6 @@
 import urlparse
 slovar=''
-def application(env, start_response):
+def app(env, start_response):
 	lines = []
 	for key, value in environ.items():
 		suck=lines.append("%s: %r" % (key, value))
