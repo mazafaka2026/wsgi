@@ -1,14 +1,18 @@
 import urlparse
 slovar=''
 def application(env, start_response):
-	env=url
-	status='200 OK'
-	headers = [
-		('Content-Type', 'text/plain')
-	]
-	body=slovar
-	start_response(status, headers)
-	return[body]
+	lines = []
+	for key, value in environ.items():
+		suck=lines.append("%s: %r" % (key, value))
+		print (str(suck))
+	#env=url
+	#status='200 OK'
+	#headers = [
+	#	('Content-Type', 'text/plain')
+	#]
+	#body=slovar
+	#start_response(status, headers)
+	#return[body]
 	
 
 url = "http://example.com/?a=1&a=2&c=123&d=6"
